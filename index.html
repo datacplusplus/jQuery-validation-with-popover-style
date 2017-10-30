@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery Validation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!-- should put this css file after bootstrap css file-->
+	<link rel="stylesheet" type="text/css" href="css\validate.css">
+</head>
+<!-- onkeypress="CheckArabicOnly(this,event)" to prevent any not arabic character -->
+<body>
+	<form id="form" dir="rtl">
+		<div class="row">
+			<div class="col-md-6 required">
+				<label  style="float:right;" for="fname">الاسم الاول:</label>
+				<input class="form-control" type="text" name="fname" id="fname" placeholder="الاسم الاول باللغة العربية" onkeypress="CheckArabicOnly(this,event)">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 required">
+				<label  style="float:right;" for="lname">اسم العائلة:</label>
+				<input class="form-control" type="text" name="lname" id="lname" placeholder="الاسم الاول باللغة العربية" onkeypress="CheckArabicOnly(this,event)">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 required">
+				<label  style="float:right;" for="email">البريد الالكتروني:</label>
+				<input class="form-control" type="text" name="email" id="email" placeholder="البريد الالكتروني">
+			</div>
+		</div>		
+		<div class="row">
+			<div class="col-md-6">
+				<input  class="btn btn-block btn-primary btn-lg" style="margin-top: 20px" type="submit" value="ارسال">
+			</div>
+		</div>	
+	</form>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+	<!-- should put this css file before checking js file-->
+	<script type="text/javascript" src="js/eform.js"></script>
+	<script type="text/javascript" src="js/checking.js"></script>
+</body>
+</html>
