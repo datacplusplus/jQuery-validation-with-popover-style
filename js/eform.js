@@ -17,6 +17,18 @@
 		//only arabic
 		Arabic: true,
 	},
+	efname : {
+		//required if arabic name empty
+		nonEmpty:$("#fname").is(':empty'),
+		//only english
+		English: true
+	},
+	elname : {
+		//required if english first name filled
+		nonEmpty:!$("#efname").is(':empty'),
+		//only english
+		English: true
+	},
 	email : {
 		//required
 		nonEmpty:true,
